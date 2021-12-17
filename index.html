@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+</head>
+<body>
+<input type="text" id="toast">
+<button onclick="Q()">貓咪</button>
+<script type="text/javascript">
+	function Q(){
+		location.replace(String(window.location.href).replace('index','meow')+'?name='+document.getElementById('toast').value);
+	}
+</script>
+</body>
+</html>
