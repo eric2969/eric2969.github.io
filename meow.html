@@ -74,9 +74,11 @@
     <script type="text/javascript">
         a=new Date();
         y=a.getFullYear();
-        m=a.getMonth();
+        m=a.getMonth()+1;
         d=a.getDate();
-        fulldate=String(y)+'/'+String(m+1)+'/'+String(d);
+        m=(m > 9 ? '' : '0') + m;
+        d=(d > 9 ? '' : '0') + d;
+        fulldate=String(y)+'/'+m+'/'+d;
         console.log(fulldate);
         html=window.location.href;
         url=new URL(html);
